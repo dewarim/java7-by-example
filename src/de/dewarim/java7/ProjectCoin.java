@@ -1,5 +1,16 @@
 package de.dewarim.java7;
 
+import de.dewarim.java7.coin.ExceptionHandling;
+
+import javax.imageio.IIOException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Properties;
+
 /*
  * Project Coin: "small change" or "small changes"
  */
@@ -16,6 +27,13 @@ public class ProjectCoin {
         say("You can now use underscores in numbers to make them easier to read: " + underscored255);
 
         say("Be careful, agents of the " + switchWithStrings("AZA") + " are listening");
+        
+        try {
+            new ExceptionHandling().throwException();
+        }
+        catch ( Exception e){
+            // ignore
+        }
     }
 
     public static void say(Object o) {
@@ -40,4 +58,5 @@ public class ProjectCoin {
         return tla;
     }
 
+    
 }
