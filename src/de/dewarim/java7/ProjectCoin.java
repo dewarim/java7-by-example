@@ -2,6 +2,7 @@ package de.dewarim.java7;
 
 import de.dewarim.java7.coin.ExceptionHandling;
 import de.dewarim.java7.coin.StringInSwitchCase;
+import de.dewarim.java7.coin.TryWithResources;
 
 import javax.imageio.IIOException;
 import java.io.File;
@@ -35,6 +36,8 @@ public class ProjectCoin {
         catch ( Exception e){
             // ignore
         }
+
+        new TryWithResources().openMissingFile();
     }
 
     public static void say(Object o) {
