@@ -1,9 +1,8 @@
 package de.dewarim.java7.coin;
 
-import java.io.FileNotFoundException;
-import java.net.MalformedURLException;
-
 /**
+ * Catch multiple exceptions with a single catch clause and rethrow properly.
+ *
  * @see {http://docs.oracle.com/javase/7/docs/technotes/guides/language/catch-multiple.html}
  */
 public class ExceptionHandling {
